@@ -96,4 +96,95 @@
     display: flex;
     background-color: white;
     align-items: center;
+    border: none;
+}
+
+.homebutton2 {
+    border: none;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.box3 {
+    width: 20vw;
+    border-top: 1px solid #ccc;
+}
+
+.container2 {
+    width: 20vw;
+}
+
+.ickibox4 {
+    border: none;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.box4 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-top: 1px solid #ccc;
+}
+
+.box5 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-top: 1px solid #ccc;
+}
+
+.box5button {
+    border: none;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+
+.box6 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-top: 1px solid #ccc;
+
+}
+
+.box6button {
+    border: none;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+
+.box7 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-top: 1px solid #ccc;
+
+}
+
+.box7button {
+    border: none;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.container2 .Names {
+    background: none;
+    border: none;
+    font-size: 7px;
+    display: flex;
+    color: rgba(97, 95, 95, 0.995);
+
 }
