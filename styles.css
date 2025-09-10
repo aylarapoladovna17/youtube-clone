@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     height: 40px;
+    width: 89vw;
 }
 
 .menu {
@@ -57,23 +58,25 @@
     margin: 0 6px;
     border-radius: 30px;
     cursor: pointer;
-    height: 50px;
-    width: 51px;
+    height: 30px;
+    width: 44px;
+    border: none;
+
 }
 
-.bell-button {
-    background-color: white;
-    border: none
-}
 
 .button-acc {
     background-color: white;
-    border: none
+    border: none;
+    height: 35px;
+    width: 50px;
 }
 
 .bell-icon {
     background-color: white;
-    border: none
+    border: none;
+    height: 35px;
+    width: 50px;
 }
 
 .account {
@@ -85,7 +88,7 @@
 .box2 {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
 }
 
 .style-scope yt-icon {
@@ -102,25 +105,29 @@
 
 .homebutton2 {
     border: none;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
 }
 
 .box3 {
-    width: 20vw;
+    width: 15vw;
     border-top: 1px solid #ccc;
 }
 
 .container2 {
-    width: 20vw;
+    width: 15vw;
     margin-left: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(62vw - 45px);
+    scrollbar-width: none;
 }
 
 .ickibox4 {
     border: none;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
@@ -129,20 +136,20 @@
 .box4 {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
     border-top: 1px solid #ccc;
 }
 
 .box5 {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
     border-top: 1px solid #ccc;
 }
 
 .box5button {
     border: none;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
@@ -152,14 +159,14 @@
 .box6 {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
     border-top: 1px solid #ccc;
 
 }
 
 .box6button {
     border: none;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
@@ -169,14 +176,14 @@
 .box7 {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
     border-top: 1px solid #ccc;
 
 }
 
 .box7button {
     border: none;
-    width: 20vw;
+    width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
@@ -217,13 +224,11 @@
 
 .container3 nav {
     display: flex;
-
+    width: 100%;
 }
 
 
 .style2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: 1px solid lightgrey;
     border-radius: 58px;
     padding: 6px 10px;
@@ -235,8 +240,117 @@
     white-space: nowrap;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+
 }
 
 .main {
     display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.container3 {
+    border-left: 1px solid #ccc;
+    max-width: 77vw;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 20px;
+    width: 99%;
+    height: calc(54vw - 45px);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.ingridients {
+    display: flex;
+    width: 80%;
+}
+
+.hat h1 {
+    font-size: 13px;
+    margin: 10px;
+    text-align: left;
+    width: 96%;
+
+
+}
+
+.hat p {
+    display: flex;
+    margin: 2px 0px;
+}
+
+.contentbtn {
+    background: none;
+    border: none;
+}
+
+.search-button2 {
+    border-radius: 30px;
+    border: 1px solid #d3d3d3;
+    background-color: rgba(244, 232, 232, 0.662);
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.homebutton:hover {
+    background-color: #ccc
+}
+
+.homebutton2:hover {
+    background-color: #ccc
+}
+
+.ickibox4:hover {
+    background-color: #ccc
+}
+
+.box5button:hover {
+    background-color: #ccc
+}
+
+.box6button:hover {
+    background-color: #ccc
+}
+
+.box7button:hover {
+    background-color: #ccc
+}
+
+.contentbtn:hover {
+    background-color: #ccc
+}
+
+.style2:hover {
+    background-color: #ccc
+}
+
+.search-button:hover {
+    background-color: #ccc
+}
+
+.search-button2:hover {
+    background-color: #ccc
+}
+
+.bell-button:hover {
+    background-color: #ccc
+}
+
+.bell-icon:hover {
+    background-color: #ccc
+}
+
+.bell-acc:hover {
+    background-color: #ccc
+}
+
+.searchbar:hover {
+    background-color: #ccc
 }
