@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     height: 40px;
-    width: 89vw;
+    width: 98vw;
 }
 
 .menu {
@@ -119,10 +119,9 @@
 .container2 {
     width: 15vw;
     margin-left: 10px;
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     overflow-y: auto;
-    height: calc(62vw - 45px);
-    scrollbar-width: none;
+    scrollbar-width: none; */
 }
 
 .ickibox4 {
@@ -225,6 +224,9 @@
 .container3 nav {
     display: flex;
     width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 
@@ -251,20 +253,17 @@
 
 .container3 {
     border-left: 1px solid #ccc;
-    max-width: 77vw;
+    max-width: 82vw;
 }
 
 .videos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
     margin-left: 16px;
     margin-right: 20px;
     width: 99%;
-    height: calc(54vw - 45px);
-    overflow-y: auto;
-    scrollbar-width: none;
+
 }
 
 .ingridients {
@@ -283,7 +282,7 @@
 
 .hat p {
     display: flex;
-    margin: 2px 0px;
+    margin: 2px 10px;
 }
 
 .contentbtn {
@@ -299,58 +298,164 @@
     margin-left: 5px;
 }
 
+.bell-acc:hover,
+.searchbar:hover,
+.bell-icon:hover,
+.bell-button:hover,
+.search-button2:hover,
+.search-button2:hover,
+.search-button:hover,
+.style2:hover,
+.contentbtn:hover,
+.box7button:hover,
+.box6button:hover,
+.ickibox4:hover,
+.homebutton2:hover,
 .homebutton:hover {
     background-color: #ccc
 }
 
-.homebutton2:hover {
-    background-color: #ccc
+.box2-main2 {
+    background: none;
+    border: none;
+    margin: 10px;
+    display: grid;
+    justify-items: center;
 }
 
-.ickibox4:hover {
-    background-color: #ccc
+.box2-main {
+    justify-items: center;
 }
 
-.box5button:hover {
-    background-color: #ccc
+@media(max-width:1143px) {
+    .videos {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: calc(68vw - 45px);
+    }
+
+    .box2-main {
+        justify-items: center;
+    }
+
+    .container2 {
+        width: 15vw;
+        margin-left: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: calc(74vw - 45px);
+        scrollbar-width: none;
+    }
 }
 
-.box6button:hover {
-    background-color: #ccc
+@media(max-width:890px) {
+    .videos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container2 {
+        margin: 0px;
+        height: auto;
+        width: 9vw;
+    }
+
+    .box2-main {
+        justify-items: center;
+        width: 9vw;
+    }
+
+    .container3 {
+        border-left: 1px solid #ccc;
+        max-width: 88vw;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .search {
+        margin-left: 48vw;
+    }
 }
 
-.box7button:hover {
-    background-color: #ccc
+
+@media(max-width:570px) {
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .container2 {
+        margin-left: 0px;
+        width: 13vw;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .container3 {
+        border-left: 1px solid #ccc;
+        max-width: 83vw;
+    }
+
+    .search {
+        margin-left: 11vw;
+    }
+
+    .account {}
 }
 
-.contentbtn:hover {
-    background-color: #ccc
+
+
+
+
+
+
+
+@media(max-width:1300px) {
+
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7 {
+        display: none;
+    }
+
+    .container2 {
+        margin: 0px;
+        height: auto;
+        width: 11vw;
+    }
+
+    .container3 {
+        border-left: 1px solid #ccc;
+        max-width: 86vw;
+    }
+
+    .box2-main {
+        justify-items: center;
+        width: 9vw;
+    }
 }
 
-.style2:hover {
-    background-color: #ccc
-}
+@media (min-width:1300px) {
+    .box2-main {
+        display: none;
+    }
 
-.search-button:hover {
-    background-color: #ccc
-}
 
-.search-button2:hover {
-    background-color: #ccc
-}
 
-.bell-button:hover {
-    background-color: #ccc
-}
+    .container2 {
+        width: 15vw;
+        margin-left: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: calc(90vw - 45px);
+        scrollbar-width: none;
+    }
 
-.bell-icon:hover {
-    background-color: #ccc
-}
-
-.bell-acc:hover {
-    background-color: #ccc
-}
-
-.searchbar:hover {
-    background-color: #ccc
+    .videos {
+        height: calc(69vw - 45px);
+    }
 }
