@@ -119,9 +119,10 @@
 .container2 {
     width: 15vw;
     margin-left: 10px;
-    /* overflow-x: hidden;
+    max-width: 82vw;
     overflow-y: auto;
-    scrollbar-width: none; */
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 .ickibox4 {
@@ -248,12 +249,17 @@
 
 .main {
     display: flex;
-    border-top: 1px solid #ccc;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .container3 {
     border-left: 1px solid #ccc;
     max-width: 82vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    border-top: 1px solid #ccc;
 }
 
 .videos {
@@ -311,11 +317,12 @@
 .box6button:hover,
 .ickibox4:hover,
 .homebutton2:hover,
-.homebutton:hover {
+.homebutton:hover,
+.box2-esasy:hover {
     background-color: #ccc
 }
 
-.box2-main2 {
+.box2-esasy {
     background: none;
     border: none;
     margin: 10px;
@@ -340,10 +347,8 @@
     .container2 {
         width: 15vw;
         margin-left: 10px;
-        overflow-x: hidden;
         overflow-y: auto;
         height: calc(74vw - 45px);
-        scrollbar-width: none;
     }
 }
 
@@ -377,6 +382,12 @@
     }
 }
 
+@media(max-width:790px) {
+    .container2 {
+        display: none;
+    }
+}
+
 
 @media(max-width:570px) {
     .videos {
@@ -404,13 +415,6 @@
     .account {}
 }
 
-
-
-
-
-
-
-
 @media(max-width:1300px) {
 
     .box2,
@@ -423,9 +427,9 @@
     }
 
     .container2 {
-        margin: 0px;
+        /* margin: 0px;
         height: auto;
-        width: 11vw;
+        width: 11vw; */
     }
 
     .container3 {
@@ -451,8 +455,7 @@
         margin-left: 10px;
         overflow-x: hidden;
         overflow-y: auto;
-        height: calc(90vw - 45px);
-        scrollbar-width: none;
+
     }
 
     .videos {
