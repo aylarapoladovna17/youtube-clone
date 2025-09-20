@@ -5,35 +5,58 @@
 .container1 {
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    width: 98vw;
+    height: 45px;
 }
 
 .menu {
+
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     align-items: center;
-
+    padding: 10px 0;
 }
 
-.znc {
-    border: none;
-    background-color: white;
-}
-
-.bar {
-    /* margin: 10px; */
-    width: 20px;
-}
-
-.search {
+.navsearch {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.from style {
-    width: 100%;
+.navsearch form {
+    align-items: center;
+    display: flex;
+}
+
+.threebarbutton {
+    border: none;
+    background-color: white;
+}
+
+.youtubeicon {
+    width: 92px;
+}
+
+.threebar {
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 2px;
+    width: 28px;
+    height: 23px;
+    cursor: pointer;
+}
+
+
+.createicon,
+.bellicon {
+    width: 24px;
+}
+
+.search {
+    width: 64px;
+    height: 40px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid #d3d3d3;
 }
 
 .searchbar {
@@ -42,47 +65,24 @@
     margin-left: 58px;
     border: 1px solid #d3d3d3;
     padding-left: 7px;
-    border-radius: 25px;
 }
 
-.search-button {
-    border-radius: 30px;
-    border: 1px solid #d3d3d3;
-    background-color: rgba(244, 232, 232, 0.662);
-    margin: 0px;
-}
-
-.bell-button {
-    border: 1px solid #d3d3d3;
-    background-color: white;
-    margin: 0 6px;
-    border-radius: 30px;
-    cursor: pointer;
-    height: 30px;
-    width: 44px;
-    border: none;
-
-}
-
-
-.button-acc {
-    background-color: white;
-    border: none;
-    height: 35px;
-    width: 50px;
-}
-
-.bell-icon {
-    background-color: white;
-    border: none;
-    height: 35px;
-    width: 50px;
-}
-
-.account {
+.bell {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.profile {
+    width: 35px;
+    border-radius: 20px;
+}
+
+.bell1,
+.bell2,
+.mainprofile {
+    background: none;
+    border: none;
 }
 
 .box2 {
@@ -101,14 +101,7 @@
     background-color: white;
     align-items: center;
     border: none;
-}
-
-.homebutton2 {
-    border: none;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    background-color: white;
+    margin-left: 10px;
 }
 
 .box3 {
@@ -117,21 +110,14 @@
 }
 
 .container2 {
-    width: 15vw;
-    margin-left: 10px;
-    max-width: 82vw;
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-width: none;
+    width: 15vw;
+    scrollbar-width: thin;
+
+
 }
 
-.ickibox4 {
-    border: none;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
 
 .box4 {
     display: flex;
@@ -147,14 +133,6 @@
     border-top: 1px solid #ccc;
 }
 
-.box5button {
-    border: none;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    background-color: white;
-
-}
 
 .box6 {
     display: flex;
@@ -164,29 +142,27 @@
 
 }
 
-.box6button {
-    border: none;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    background-color: white;
-
-}
 
 .box7 {
     display: flex;
     flex-direction: column;
     width: 15vw;
     border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 
 }
 
-.box7button {
+.box7button,
+.box6button,
+.box5button,
+.box4button,
+.homebutton2 {
     border: none;
     width: 15vw;
     display: flex;
     align-items: center;
     background-color: white;
+    margin-left: 10px;
 }
 
 .container2 .Names {
@@ -198,29 +174,26 @@
 
 }
 
-.homebutton p {
+.box8 p {
+    font-size: 12px;
+    text-align: initial;
+    margin: 0;
     margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #8b8888;
+    margin-top: 10px;
 }
 
-.homebutton2 p {
-    margin-left: 20px;
-}
-
-.ickibox4 p {
-    margin-left: 20px;
-}
-
-.box5button p {
-    margin-left: 20px;
-}
-
-.box6button p {
-    margin-left: 20px;
-}
-
+.homebutton p,
+.homebutton2 p,
+.box4button p,
+.box5button p,
+.box6button p,
 .box7button p {
     margin-left: 20px;
 }
+
 
 .container3 nav {
     display: flex;
@@ -235,7 +208,7 @@
     border: 1px solid lightgrey;
     border-radius: 58px;
     padding: 6px 10px;
-    background-color: #f3efef;
+    background-color: #ebebeb;
     cursor: pointer;
     width: auto;
     height: 33px;
@@ -254,8 +227,7 @@
 }
 
 .container3 {
-    border-left: 1px solid #ccc;
-    max-width: 82vw;
+    width: 85vw;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -266,9 +238,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 16px;
+    margin-left: 5px;
     margin-right: 20px;
-    width: 99%;
+    width: 100%;
+    background-color: #ebebeb;
 
 }
 
@@ -294,28 +267,44 @@
 .contentbtn {
     background: none;
     border: none;
+    margin: 4px 0px;
+    padding: 0px;
 }
 
-.search-button2 {
+.contents {
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+#google {
+    color: rgb(201, 183, 183);
+    margin-left: 25px;
+}
+
+.microphone {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.voiceicon {
+    height: 25px;
+    width: 25px;
+    border: 8px solid whitesmoke;
     border-radius: 30px;
-    border: 1px solid #d3d3d3;
-    background-color: rgba(244, 232, 232, 0.662);
-    margin: 0px;
-    margin-left: 5px;
+    background-color: whitesmoke;
 }
 
-.bell-acc:hover,
+
 .searchbar:hover,
-.bell-icon:hover,
-.bell-button:hover,
-.search-button2:hover,
-.search-button2:hover,
-.search-button:hover,
+.search:hover,
 .style2:hover,
 .contentbtn:hover,
 .box7button:hover,
 .box6button:hover,
-.ickibox4:hover,
+.box4button:hover,
 .homebutton2:hover,
 .homebutton:hover,
 .box2-esasy:hover {
@@ -328,137 +317,65 @@
     margin: 10px;
     display: grid;
     justify-items: center;
+    width: 100%;
+    font-size: 10px;
 }
 
 .box2-main {
     justify-items: center;
+    width: 100%;
 }
 
-@media(max-width:1143px) {
-    .videos {
-        grid-template-columns: 1fr 1fr 1fr;
-        height: calc(68vw - 45px);
-    }
-
-    .box2-main {
-        justify-items: center;
-    }
-
-    .container2 {
-        width: 15vw;
-        margin-left: 10px;
-        overflow-y: auto;
-        height: calc(74vw - 45px);
-    }
+.box8-button {
+    background: none;
+    border: none;
 }
 
-@media(max-width:890px) {
-    .videos {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .container2 {
-        margin: 0px;
-        height: auto;
-        width: 9vw;
-    }
-
-    .box2-main {
-        justify-items: center;
-        width: 9vw;
-    }
-
-    .container3 {
-        border-left: 1px solid #ccc;
-        max-width: 88vw;
-    }
-
-    .searchbar {
-        display: none;
-    }
-
-    .search {
-        margin-left: 48vw;
-    }
-}
-
-@media(max-width:790px) {
-    .container2 {
-        display: none;
-    }
-}
-
-
-@media(max-width:570px) {
-    .videos {
-        grid-template-columns: 1fr;
-    }
-
-    .container2 {
-        margin-left: 0px;
-        width: 13vw;
-    }
-
-    .searchbar {
-        display: none;
-    }
-
-    .container3 {
-        border-left: 1px solid #ccc;
-        max-width: 83vw;
-    }
-
-    .search {
-        margin-left: 11vw;
-    }
-
-    .account {}
-}
-
-@media(max-width:1300px) {
+@media (max-width:1313px) {
 
     .box2,
     .box3,
     .box4,
     .box5,
     .box6,
-    .box7 {
+    .box7,
+    .box8,
+    #google {
         display: none;
     }
 
     .container2 {
-        /* margin: 0px;
-        height: auto;
-        width: 11vw; */
+        min-width: 7vw;
     }
 
     .container3 {
-        border-left: 1px solid #ccc;
-        max-width: 86vw;
+        width: 93vw;
     }
 
-    .box2-main {
-        justify-items: center;
-        width: 9vw;
-    }
 }
 
-@media (min-width:1300px) {
+@media (min-width:1313px) {
     .box2-main {
         display: none;
     }
+}
 
-
-
-    .container2 {
-        width: 15vw;
-        margin-left: 10px;
-        overflow-x: hidden;
-        overflow-y: auto;
-
+@media(max-width:805px) {
+    .videos {
+        grid-template-columns: 1fr 1fr;
     }
 
+    .container2 {
+        display: none;
+    }
+
+    .container3 {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
     .videos {
-        height: calc(69vw - 45px);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
