@@ -354,7 +354,7 @@
     }
 
     .container3 {
-        width: 90vw;
+        width: 92vw;
     }
 
 }
@@ -438,7 +438,7 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:400px) {
     .remove {
         display: none;
     }
