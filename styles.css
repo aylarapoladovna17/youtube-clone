@@ -3,12 +3,14 @@
 .bodyclass {
     width: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 .container1 {
     display: flex;
     justify-content: space-between;
-    height: 45px;
+    height: 7vh;
+    overflow: hidden;
 }
 
 .menu {
@@ -92,7 +94,7 @@
 .box2 {
     display: flex;
     flex-direction: column;
-    width: 15vw;
+    width: 20vw;
 }
 
 .style-scope yt-icon {
@@ -100,13 +102,6 @@
     flex-direction: column;
 }
 
-.homebutton {
-    display: flex;
-    background-color: white;
-    align-items: center;
-    border: none;
-    margin-left: 10px;
-}
 
 .box3 {
     width: 15vw;
@@ -116,9 +111,9 @@
 .container2 {
     overflow-y: auto;
     overflow-x: hidden;
-    width: 15vw;
+    width: 17vw;
     scrollbar-width: thin;
-    height: 100vh;
+    height: 93vh;
 }
 
 
@@ -161,11 +156,19 @@
 .box4button,
 .homebutton2 {
     border: none;
-    width: 15vw;
+    width: 20vw;
     display: flex;
     align-items: center;
     background-color: white;
-    margin-left: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.homebutton {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: none;
+    padding: 0px 20px 0px 20px;
 }
 
 .container2 .Names {
@@ -204,6 +207,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
+    height: 7vh;
 }
 
 
@@ -230,20 +234,22 @@
 }
 
 .container3 {
-    width: 85vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
+    width: 83vw;
     border-top: 1px solid #ccc;
-    height: 100vh;
+
 }
 
 .videos {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
     background-color: #ebebeb;
     grid-template-columns: repeat(4, 1fr);
+    height: 84vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    padding: 17px;
+    padding-bottom: 0px;
 }
 
 .ingridients {
@@ -262,7 +268,7 @@
 
 .hat p {
     display: flex;
-    margin: 2px 2px 0px 7px;
+    margin: 2px -9px 1px 3px;
     color: grey;
 }
 
@@ -274,9 +280,8 @@
 }
 
 .contents {
-    margin-top: 15px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
@@ -350,11 +355,11 @@
     }
 
     .container2 {
-        width: 8vw;
+        width: 10vw;
     }
 
     .container3 {
-        width: 92vw;
+        width: 90vw;
     }
 
 }
